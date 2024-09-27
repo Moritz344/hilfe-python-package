@@ -1,0 +1,18 @@
+
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+[project]
+name = "hilfe"
+version = "0.1.0"
+description = "Get help."
+authors = [
+{ name = "Moritz Maier", email = "moritzmaier34@gmail.com" }
+]
+dependencies = [
+"typer",
+"subprocess",
+"termcolor"
+]
+[project.scripts]
+hilfe = "hilfe.cli:app"
